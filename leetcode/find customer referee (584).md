@@ -6,12 +6,13 @@
 
 #### Table: Customer
 
-|-------------|---------|
+
 | Column Name | Type    |
-|-------------+---------|
+|-------------|---------|
 | id          | int     |
 | name        | varchar |
 | referee_id  | int     |
+
 
 ### Question
 
