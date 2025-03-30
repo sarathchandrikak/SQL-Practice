@@ -8,23 +8,21 @@
 #### Table: Signups
 
 
------------------------------
-| Column Name    | Type     |
------------------------------
-| user_id        | int      |
-| time_stamp     | datetime |
------------------------------
- 
+### Table: Users  
 
-#### Table: Confirmations
+| Column Name | Type     |  
+|-------------|---------|  
+| user_id     | int     |  
+| time_stamp  | datetime |  
 
------------------------------
-| Column Name    | Type     |
------------------------------
-| user_id        | int      |
-| time_stamp     | datetime |
-| action         | ENUM     |
------------------------------
+### Table: Confirmations  
+
+| Column Name | Type     |  
+|-------------|---------|  
+| user_id     | int     |  
+| time_stamp  | datetime |  
+| action      | ENUM    |  
+
 
 ### Question
 
