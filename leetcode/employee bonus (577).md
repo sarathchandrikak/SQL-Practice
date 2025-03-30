@@ -5,25 +5,22 @@
 
 ### Table Schema
 
-#### Table: Employee
+#### Table: Employee  
 
--------------------------
-| Column Name | Type    |
--------------------------
-| empId       | int     |
-| name        | varchar |
-| supervisor  | int     |
-| salary      | int     |
--------------------------
+| Column Name | Type    |  
+|------------|---------|  
+| empId      | int     |  
+| name       | varchar |  
+| supervisor | int     |  
+| salary     | int     |  
 
-#### Table: Bonus
+#### Table: Bonus  
 
-----------------------
-| Column Name | Type |
-----------------------
-| empId       | int  |
-| bonus       | int  |
-----------------------
+| Column Name | Type |  
+|------------|------|  
+| empId      | int  |  
+| bonus      | int  |  
+
 
 ### Question
 
