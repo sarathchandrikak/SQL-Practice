@@ -6,14 +6,12 @@
 
 #### Table: Activity
 
-|----------------|---------|
 | Column Name    | Type    |
 |----------------|---------|
 | machine_id     | int     |
 | process_id     | int     |
 | activity_type  | enum    |
 | timestamp      | float   |
-|----------------|---------|
 
 
 ### Question
