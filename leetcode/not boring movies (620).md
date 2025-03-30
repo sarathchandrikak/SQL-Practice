@@ -6,14 +6,12 @@
 
 #### Table: Cinema
 
------------------------------
-| Column Name    | Type     |
------------------------------
-| id             | int      |
-| movie          | varchar  |
-| description    | varchar  |
-| rating         | float    |
------------------------------
+| Column Name | Type    |
+|-------------|---------|
+| id          | int     |
+| movie       | varchar |
+| description | varchar |
+| rating      | float   |
 
 ### Question
 
