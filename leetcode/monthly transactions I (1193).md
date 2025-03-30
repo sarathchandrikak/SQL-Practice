@@ -6,7 +6,7 @@
 
 #### Table: Transactions
 
-|---------------|---------|
+
 | Column Name   | Type    |
 |---------------|---------|
 | id            | int     |
@@ -14,7 +14,6 @@
 | state         | enum    |
 | amount        | int     |
 | trans_date    | date    |
-|---------------|---------|
 
 ### Question
 
