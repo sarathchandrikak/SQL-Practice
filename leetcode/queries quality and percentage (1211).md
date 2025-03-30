@@ -6,14 +6,14 @@
 
 #### Table: Queries
 
-|-------------|---------|
+
 | Column Name | Type    |
 |-------------|---------|
 | query_name  | varchar |
 | result      | varchar |
 | position    | int     |
 | rating      | int     |
-|-------------|---------|
+
 
 ### Question
 
