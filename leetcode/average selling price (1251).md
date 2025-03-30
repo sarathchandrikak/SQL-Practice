@@ -6,25 +6,22 @@
 
 #### Table: Prices
 
-+---------------+---------+
-| Column Name   | Type    |
-+---------------+---------+
-| product_id    | int     |
-| start_date    | date    |
-| end_date      | date    |
-| price         | int     |
-+---------------+---------+
+#### Table: Products
 
+| Column Name | Type  |
+|-------------|-------|
+| product_id  | int   |
+| start_date  | date  |
+| end_date    | date  |
+| price       | int   |
 
 #### Table: UnitsSold
 
-+---------------+---------+
-| Column Name   | Type    |
-+---------------+---------+
-| product_id    | int     |
-| purchase_date | date    |
-| units         | int     |
-+---------------+---------+
+| Column Name   | Type  |
+|--------------|-------|
+| product_id   | int   |
+| purchase_date| date  |
+| units        | int   |
 
 ### Question
 
