@@ -4,33 +4,26 @@
 
 ### Table Schema
 
-#### Table: Students
+#### Table: Students  
 
----------------------------
-| Column Name   | Type    |
----------------------------
-| student_id    | int     |
-| student_name  | varchar |
----------------------------
- 
+| Column Name   | Type    |  
+|--------------|---------|  
+| student_id   | int     |  
+| student_name | varchar |  
 
-#### Table: Subjects
+#### Table: Subjects  
 
---------------------------
-| Column Name  | Type    |
---------------------------
-| subject_name | varchar |
---------------------------
- 
+| Column Name  | Type    |  
+|-------------|---------|  
+| subject_name | varchar |  
 
-#### Table: Examinations
+#### Table: Examinations  
 
---------------------------
-| Column Name  | Type    |
---------------------------
-| student_id   | int     |
-| subject_name | varchar |
---------------------------
+| Column Name  | Type    |  
+|-------------|---------|  
+| student_id   | int     |  
+| subject_name | varchar |  
+
 
 ### Question
 
