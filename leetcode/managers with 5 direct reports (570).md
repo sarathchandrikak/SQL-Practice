@@ -6,14 +6,12 @@
 
 #### Table: Employee
 
--------------------------
 | Column Name | Type    |
--------------------------
+|-------------|---------|
 | id          | int     |
 | name        | varchar |
 | department  | varchar |
 | managerId   | int     |
--------------------------
 
 
 ### Question
