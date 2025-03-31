@@ -16,7 +16,6 @@
 
 #### Table: Product
 
-+--------------+---------+
 | Column Name  | Type    |
 |--------------|---------|
 | product_id   | int     |
