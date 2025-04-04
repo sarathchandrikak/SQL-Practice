@@ -136,33 +136,45 @@ Write a query to return all users, but flip their gender:
 ```
 ---
 
-### **5. Time Between Events Based on Type**
+### **5. In JOIN Conditions (Dynamic Join Logic)**
+
 
 #### 📌 Problem:
-For each user and each event_type, calculate the time (in hours) since their last event of the same type.
+To vary join behavior conditionally.
 
 #### 🧱 Table Schema:
-**Table:** `events`
+**Table:** `users` 
+
+| Column Name | Data Type      |
+|-------------|----------------|
+| user_id     | INT            |
+| name        | VARCHAR(100)   |
+| email       | VARCHAR(100)   |
+| type        | VARCHAR(20)    |
+
+
+**Table:** `orders`
 
 | Column Name     | Data Type       |
-|-----------------|-----------------|
-| `event_id`      | `INT`           |
-| `user_id`       | `INT`           |
-| `event_type`    | `VARCHAR(50)`   |
-| `event_time`    | `TIMESTAMP`     |
+|------------------|------------------|
+| order_id         | INT              |
+| customer_id      | INT              |
+| guest_user_id    | INT              |
+| order_date       | DATE             |
+| order_total      | DECIMAL(10,2)    |
+| status           | VARCHAR(20)      |
+
 
 #### 💡 Solution 
 
 ```sql
-      SELECT 
-          user_id,
-          event_id,
-          event_type,
-          event_time,
-          EXTRACT(EPOCH FROM (event_time - 
-              LAG(event_time) OVER (PARTITION BY user_id, event_type ORDER BY event_time)))/3600 
-              AS hours_since_last
-      FROM user_events;
+      SELECT *
+FROM users u
+LEFT JOIN orders o
+  ON u.user_id = CASE 
+                   WHEN u.type = 'guest' THEN o.guest_user_id
+                   ELSE o.customer_id
+                 END;**
 ```
 ---
 
